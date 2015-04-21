@@ -1,0 +1,25 @@
+<ion-view view-title="Sign Up">
+  <span class="error-message center" ng-if="validationError">{{ validationError }}</span>
+  <ion-content class="has-header">
+    <form class="list padding">
+    	<label class="item item-input">
+    	  <span class="input-label">Email</span>
+    	  <input type="email" ng-model="user.email">
+    	</label>
+    	<label class="item item-input">
+    	  <span class="input-label">Password</span>
+    	  <input type="password" ng-model="user.password">
+    	</label>
+      <div class="padding">
+        <button class="button button-block button-positive" ng-click="signup()">
+          Register
+        </button>
+      </div>
+    </form>
+    <div class="center">Have an account already?
+      <button class="button button-block button-clear" ng-href="login">
+        Login
+      </button>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,29 @@
+<!-- <ion-nav-bar class="bar-warning">
+  <ion-nav-back-button>
+  </ion-nav-back-button>
+</ion-nav-bar> -->
+<ion-view view-title="Login">
+
+  <ion-content class="has-header" style="background: url(../img/grand-central-small.jpg) center center no-repeat">
+    <div >
+    <span class="error-message center" ng-if="validationError">{{ validationError }}</span>
+    <form class="list padding">
+
+    	<label class="item item-input transparent">
+    	  <span class="input-label">Email</span>
+    	  <input type="email" ng-model="user.email">
+    	</label>
+    	<label class="item item-input">
+    	  <span class="input-label">Password</span>
+    	  <input type="password" ng-model="user.password">
+    	</label>
+      <div class="padding">
+        <button class="button button-block button-positive" ng-click="login()">
+          Log in
+        </button>
+      </div>
+    </form>
+    </div>
+  </ion-content>
+
+</ion-view>
